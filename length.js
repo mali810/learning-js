@@ -18,7 +18,7 @@ console.log(myStr);
 if(5<10){
  console.log("Muhammad Ali");
  console.log("Muhammad Ali");
- 
+ console.log("Muhammad Ali");
 }
 
 
