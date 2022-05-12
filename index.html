@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NADRA PROGRAM</title>
+</head>
+<body>
+
+    <h1>Nadra Check Eligiblity</h1>
+
+    <label>Enter your age</label>
+
+    <input type='number' />
+    <button>
+        Submit
+    </button>
+
+    <div>
+        <h2 id="result"></h2>
+    </div>
+    
+
+    <script type="text/javascript">
+
+
+            function checkId(age) {
+            if (age < 18) {
+                return "you cannot apply for id.";
+            }
+
+            return "yes you can apply.";
+            }
+
+            //let result = checkId(19);
+            //console.log(result);
+            
+           let value= document.getElementsByTagName('input')[0].value;
+            document.getElementsByTagName('button')[0].addEventListener('click',function(){
+
+
+                document.getElementById('result').innerHTML=checkId(value)
+            })
+
+
+
+</script>
+</body>
+</html>
